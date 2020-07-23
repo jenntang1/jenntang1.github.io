@@ -1,14 +1,14 @@
 /* Styles for jennifer-tang.com */
-body {
-    margin: 0;
-    font-size: 28px;
-    font-family: 'Avenir LT W01 45 Book';
-}
-
-.header {
-    background-color: #FFFFFF;
-    padding: 30px;
-    text-align: center;
+header {
+    background-color:#FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: right;
+    box-shadow: 0 0 25px 0 #000000;
 }
 
 #navbar {
@@ -34,69 +34,68 @@ body {
     color: #336699;
 }
 
-.content {
-    color: #336699;
-    padding: 16px;
-}
-
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-}
-
-.sticky + .content {
     padding-top: 60px;
 }
 
-/* Style for footer on landing page */
-.social-media {
-	height: 100%;
-	background-color: #1b4332;
-	display: flex;
-	justify-self: center;
-	justify-content: center;
-	align-content: center;
-	overflow: visible;
+.name {
+    width: 150px;
+    height: 50px;
+    border: 3px solid #333;
+    font-family: 'Avenir LT W01 85 Heavy';
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    transition: 1s;
 }
-/* Style for social media buttons on landing page */
-.social-media a{
-	display: flex;
-	text-decoration: none;
-	font-size: 18px;
-	width: 60px;
-	height: 60px;
-	color: #1b4332;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	z-index: 3;
-	margin: 0 5px;
+  
+.name::before, .name::after {
+    position: absolute;
+    background: #FFFFFF;
+    z-index: -1;
+    transition: 1s;
+    content: '';
 }
-/* Style for social media buttons before hover */  
-.social-media a::before{
-	content: "";
-	position: absolute;
-	width: 60px;
-	height: 60px;
-	background: linear-gradient(45deg,#22a6b3,#74A867);
-	border-radius: 50%;
-	z-index: 3;
-	transition: 0.3s ease-in;
+  
+.name::before {
+    height: 50px;
+    width: 130px;
 }
-/* Style for social media buttons' radius during hover */  
-.social-media a:hover::before{
-	transform: scale(0);
-	z-index: 3;
+  
+.name::after {
+    width: 150px;
+    height: 30px;
 }
-/* Style for social media buttons' logo during hover */  
-.social-media a i{
-	z-index: 3;
-	transition: 0.3s ease-in;
+  
+.name:hover::before {
+    width: 0px;
+    background: #FFFFFF;
 }
-/* Style for social media buttons after hover */  
-.social-media a:hover i{
-	z-index: 3;
-	background: linear-gradient(45deg,#22a6b3,#74A867);
-	transform: scale(2.2);
+  
+.name:hover::after {
+    height: 0px;
+    background: #FFFFFF;
+}
+  
+.name:hover {
+    background: #FFFFFF;
+}
+
+body {
+    height: 125vh;
+    font-family: 'Avenir LT W01 45 Book';
+    margin-top: 80px;
+    padding: 30px;
+}
+
+main {
+    color: #336699;
 }
