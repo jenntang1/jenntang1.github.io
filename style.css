@@ -48,3 +48,55 @@ body {
 .sticky + .content {
     padding-top: 60px;
 }
+
+/* Style for footer on landing page */
+.social-media {
+	height: 100%;
+	background-color: #1b4332;
+	display: flex;
+	justify-self: center;
+	justify-content: center;
+	align-content: center;
+	overflow: visible;
+}
+/* Style for social media buttons on landing page */
+.social-media a{
+	display: flex;
+	text-decoration: none;
+	font-size: 18px;
+	width: 60px;
+	height: 60px;
+	color: #1b4332;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 3;
+	margin: 0 5px;
+}
+/* Style for social media buttons before hover */  
+.social-media a::before{
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background: linear-gradient(45deg,#22a6b3,#74A867);
+	border-radius: 50%;
+	z-index: 3;
+	transition: 0.3s ease-in;
+}
+/* Style for social media buttons' radius during hover */  
+.social-media a:hover::before{
+	transform: scale(0);
+	z-index: 3;
+}
+/* Style for social media buttons' logo during hover */  
+.social-media a i{
+	z-index: 3;
+	transition: 0.3s ease-in;
+}
+/* Style for social media buttons after hover */  
+.social-media a:hover i{
+	z-index: 3;
+	background: linear-gradient(45deg,#22a6b3,#74A867);
+	transform: scale(2.2);
+}
