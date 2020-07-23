@@ -1,0 +1,50 @@
+/* Styles for jennifer-tang.com */
+body {
+    margin: 0;
+    font-size: 28px;
+    font-family: 'Avenir LT W01 45 Book';
+}
+
+.header {
+    background-color: #FFFFFF;
+    padding: 30px;
+    text-align: center;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+#navbar a {
+    float: center;
+    display: block;
+    color: #336699;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navbar a:hover {
+    color: #336699;
+}
+
+#navbar a.home {
+    color: #336699;
+}
+
+.content {
+    color: #336699;
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
