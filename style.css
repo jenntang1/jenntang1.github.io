@@ -124,7 +124,14 @@ body {
 }
 
 /* Style for About */
-.about_right {
+.about {
+    float: center;
+    width: 1200px;
+    height: 1200px;
+}
+
+.about_left {
+    float: left;
     width: 200px;
     height: 200px;
 }
@@ -134,7 +141,8 @@ body {
     height: 150px;
 }
 
-.about_left {
+.about_right {
+    float: right;
     width: 500px;
     height: 200px;
 }
