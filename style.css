@@ -1,4 +1,10 @@
-/* Navigation bar */
+/* Web font support */
+@font-face {
+    font-family: 'Avenir';
+    src: url('https://github.com/jenntang1/jenntang1.github.io/blob/master/fonts/Avenir-Book.ttf')  format('truetype');
+  }
+
+/* Style for navigation bar */
 header {
     background-color: #DEDEDE;
     position: fixed;
@@ -42,11 +48,27 @@ header {
     padding-top: 60px;
 }
 
+/* Style for header image */
+.name_header {
+    width: 150px;
+    height: 50px;
+    border: 3px solid #333;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    transition: 1s;
+}
+
+/*
 .name {
     width: 150px;
     height: 50px;
     border: 3px solid #333;
-    font-family: 'Avenir LT W01 85 Heavy';
+    font-family: 'Avenir Book';
     font-size: 20px;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
@@ -88,18 +110,23 @@ header {
   
 .name:hover {
     background: #DEDEDE;
-}
+} */
 
-/* Default format */
+/* Default Style */
 body {
     height: 125vh;
-    font-family: 'Avenir LT W01 45 Book';
+    font-family: 'Avenir';
     margin-top: 80px;
     padding: 50px;
 }
 
+/* Style for About Me */
+.profile_image {
+    width: 50px;
+    height: 50px;
+}
 
-/* Socal media links */
+/* Style for socal media links */
 ul {
     position: absolute;
     top: 50%;
@@ -148,4 +175,15 @@ ul li a .fa {
   
 ul li a:hover .fa {
     color: #336699;
+}
+
+/* Style for footer */
+footer {
+	height: 100%;
+	background-color: #DEDEDE;
+	display: flex;
+	justify-self: center;
+	justify-content: center;
+	align-content: center;
+	overflow: visible;
 }
