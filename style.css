@@ -3,7 +3,7 @@
 /* Font type support */
 @font-face {
     font-family: 'Avenir';
-    src: url('https://github.com/jenntang1/jenntang1.github.io/blob/master/fonts/Avenir-Book.ttf')  format('truetype');
+    src: url('https://github.com/jenntang1/jenntang1.github.io/blob/master/fonts/Avenir-Book.ttf') format('truetype');
   }
 
 /* Style for navigation bar */
@@ -159,11 +159,11 @@ body {
 }
 
 .contact_right {
-    clear:both;
+    float: left;
 }
 
 .clear {
-    float: right;
+    clear: both;
 }
 
 /* Style for socal media links */
