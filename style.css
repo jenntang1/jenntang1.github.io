@@ -1,4 +1,6 @@
-/* Web font support */
+/* The styles are ordered from top of the webpage to the bottom */
+
+/* Font type support */
 @font-face {
     font-family: 'Avenir';
     src: url('https://github.com/jenntang1/jenntang1.github.io/blob/master/fonts/Avenir-Book.ttf')  format('truetype');
@@ -6,7 +8,7 @@
 
 /* Style for navigation bar */
 header {
-    background-color: #DEDEDE;
+    background-color: #FFFFFF;
     position: fixed;
     top: 0;
     left: 0;
@@ -116,14 +118,25 @@ header {
 body {
     height: 125vh;
     font-family: 'Avenir';
+    color: #336699;
     margin-top: 80px;
     padding: 50px;
 }
 
-/* Style for About Me */
+/* Style for About */
+.about_right {
+    width: 200px;
+    height: 200px;
+}
+
 .profile_image {
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
+}
+
+.about_left {
+    width: 500px;
+    height: 200px;
 }
 
 /* Style for socal media links */
@@ -179,11 +192,12 @@ ul li a:hover .fa {
 
 /* Style for footer */
 footer {
-	height: 100%;
-	background-color: #DEDEDE;
+	height: 10%;
+	background-color: #FFFFFF;
 	display: flex;
 	justify-self: center;
 	justify-content: center;
 	align-content: center;
-	overflow: visible;
+    overflow: visible;
+    font-size: 12px;
 }
