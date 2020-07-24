@@ -126,8 +126,8 @@ body {
 /* Style for About */
 .about {
     float: center;
-    width: 1200px;
-    height: 1200px;
+    width: 800px;
+    height: 300px;
 }
 
 .about_left {
@@ -145,6 +145,21 @@ body {
     float: right;
     width: 500px;
     height: 200px;
+}
+
+/* Style for About */
+.contact {
+    float: center;
+    width: 800px;
+    height: 300px;
+}
+
+.contact_left {
+    float: left;
+}
+
+.contact_right {
+    float: right;
 }
 
 /* Style for socal media links */
