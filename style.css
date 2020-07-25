@@ -62,11 +62,11 @@ header {
 
 /* Style for header image */
 .name_header {
+    -webkit-tap-highlight-color: transparent;
     width: 150px;
     height: 50px;
     border: 3px solid #333;
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,20 +126,21 @@ header {
 
 /* Style for About */
 .about {
-    float: center;
-    width: 800px;
-    height: 300px;
+    width: 80%;
+	margin: 0 auto;
+    padding: 20px;
 }
 
 .about_left {
+    width: 30px;
+ 
     float: left;
-    width: 200px;
-    height: 200px;
 }
 
 .profile_image {
     width: 150px;
-    height: 150px;
+
+    float: left;
 }
 
 .about_right {
@@ -157,10 +158,14 @@ header {
 
 .contact_top {
     float: left;
+    width: 200px;
+    height: 200px;
 }
 
 .contact_bottom {
     float: left;
+    width: 200px;
+    height: 200px;
 }
 
 .clear {
@@ -170,8 +175,9 @@ header {
 /* Style for socal media links */
 .contact_bottom a {
     position: relative;
-    width: 60px;
-    height: 60px;
+    list-style-image: none;
+    width: 40px;
+    height: 40px;
     display: block;
     text-align: center;
     margin: 0 10px;
@@ -180,7 +186,7 @@ header {
     box-sizing: border-box;
     text-decoration: none;
     box-shadow: 0 10px 15px rgba(0,0,0,0.3);
-    background: linear-gradient(0deg, #ddd, #fff);
+    background: linear-gradient(0deg, #DDD, #FFF);
     transition: .5s;
 }
   
@@ -192,7 +198,7 @@ header {
     width: 100%;
     height: 100%;
     display: block;
-    background: linear-gradient(0deg, #fff, #ddd);
+    background: linear-gradient(0deg, #FFF, #DDD);
     border-radius: 30%;
     line-height: calc(60px - 12px);
     font-size: 24px;
