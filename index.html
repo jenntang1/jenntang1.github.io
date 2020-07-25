@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html>
 
+<!-- Set meta, style support and title -->
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap">
         <link rel="stylesheet" href="style.css">
         <title>Full-Stack SWE: Jennifer Tang</title>
     </head>
 
     <body>
-
+<!-- Set clickable logo in header/navigation bar that goes to top of webpage -->
         <header>
             <div class="name">
-                <a href="https://jenntang1.github.io/">
+                <!-- <a href="https://jenntang1.github.io/">
                     <img class="name_header" alt="Top of page" src="images/name_header.png">
-                </a>
+                </a> -->
+                <span class="noselect">Jennifer Tang</span>
             </div>
         </header>
 
+<!-- Set About section -->
         <div class="about">
             <h1>About</h1>
-            <div class="about_left">
-                <img class="profile_image" src="images/profile_image.png">
-            </div>
-            <div class="about_right">
-                <p>Hi, I am Jennifer Tang.  I am an aspiring Full-Stack Software Engineer with interest in data science/management.  I have ten years of experience in marketing analytics and pricing strategies.  I hope to combine my analytical skills and technical programming skills to develop impactful applications and software.</p>
-            </div>
+        </div>
+        <div class="about_left">
+            <img class="profile_image" src="images/profile_image.png">
+        </div>
+        <div class="about_right">
+            <p>Hi, I am Jennifer Tang.  I am an aspiring Full-Stack Software Engineer with interest in data science/management.  I have ten years of experience in marketing analytics and pricing strategies.  I hope to combine my analytical skills and technical programming skills to develop impactful applications and software.</p>
         </div>
 
+<!-- Set Portfolio section -->
         <div class="portfolio">
             <h1>Portfolio</h1>
             
@@ -63,11 +66,13 @@
             </div>
         </div>
 
+<!-- Set Resume section -->
         <div class="resume">
             <h1>Resume</h1>
             <p>Click <a href="Jennifer Tang – Full-Stack Software Engineer 2020.pdf">here</a> to view my professional experiences.</p>
         </div>
 
+<!-- Set Contact section -->
         <div class="contact">
             <h1>Contact</h1>
             <div class="contact_top">
@@ -81,12 +86,14 @@
             </div> 
         </div>
 
+<!-- Set "copyright" information at bottom of webpage -->
         <footer>
             <div class="footer">
                 <p>Created by Jennifer Tang at  <a href="https://github.com/jenntang1/jenntang1.github.io"><i class="fa fa-github"></i></a></p>
             </div>
         </footer>
 
+<!-- Set sticky header/navigation bar wiht jQuery-->
         <script>
             window.onscroll = function() {myFunction()};
 
