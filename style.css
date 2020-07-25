@@ -6,6 +6,16 @@
     src: url('https://github.com/jenntang1/jenntang1.github.io/blob/master/fonts/Avenir-Book.ttf') format('truetype');
   }
 
+
+/* Default Style */
+body {
+    height: 125vh;
+    font-family: 'Avenir';
+    color: #336699;
+    margin-top: 80px;
+    padding: 50px;
+}
+
 /* Style for navigation bar */
 header {
     background-color: #FFFFFF;
@@ -114,15 +124,6 @@ header {
     background: #DEDEDE;
 } */
 
-/* Default Style */
-body {
-    height: 125vh;
-    font-family: 'Avenir';
-    color: #336699;
-    margin-top: 80px;
-    padding: 50px;
-}
-
 /* Style for About */
 .about {
     float: center;
@@ -215,6 +216,6 @@ footer {
     font-size: 12px;
 }
 
-footer .fa {
+footer a {
     color: #262626;
 }
