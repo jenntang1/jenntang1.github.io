@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="top">
 
 <!-- Set meta, style support and title -->
     <head>
@@ -10,26 +10,27 @@
     </head>
 
     <body>
-<!-- Set clickable logo in header/navigation bar that goes to top of webpage -->
+<!-- Set clickable logo in header/navigation bar that goes to top -->
         <header>
-            <div class="name">
-                <!-- <a href="https://jenntang1.github.io/">
-                    <img class="name_header" alt="Top of page" src="images/name_header.png">
-                </a> -->
-                <span class="noselect">Jennifer Tang</span>
+            <div id="header_svg">
+                <svg height="150" width="150" xmlns="http://www.w3.org/2000/svg">
+                    <circle id="header_shape" cx="80" cy="80" r="60" height="150" width="150" fill="white"></circle>
+                    <div id="header_text"><a href="#top">jenntang1</a></div>
+                </svg>
             </div>
         </header>
 
 <!-- Set About section -->
-        <div class="about">
+        <div id="about">
             <h1>About</h1>
         </div>
-        <div class="about_left">
-            <img class="profile_image" src="images/profile_image.png">
+        <div id="about_left">
+            <img id="profile_image" src="images/profile_image.png">
         </div>
-        <div class="about_right">
+        <div id="about_right">
             <p>Hi, I am Jennifer Tang.  I am an aspiring Full-Stack Software Engineer with interest in data science/management.  I have ten years of experience in marketing analytics and pricing strategies.  I hope to combine my analytical skills and technical programming skills to develop impactful applications and software.</p>
         </div>
+        <div class="clear"></div>
 
 <!-- Set Portfolio section -->
         <div class="portfolio">
@@ -67,18 +68,18 @@
         </div>
 
 <!-- Set Resume section -->
-        <div class="resume">
+        <div id="resume">
             <h1>Resume</h1>
-            <p>Click <a href="Jennifer Tang – Full-Stack Software Engineer 2020.pdf">here</a> to view my professional experiences.</p>
+            <p>Click <a href="Jennifer Tang – Full-Stack Software Engineer 2020.pdf" id="resume_pdf">here</a> to view my professional experiences.</p>
         </div>
 
 <!-- Set Contact section -->
-        <div class="contact">
+        <div id="contact">
             <h1>Contact</h1>
-            <div class="contact_top">
-                <p>Connect with me through the following channels.</p>
+            <div id="contact_left">
+                <p>Connect with me through these channels:</p>
             </div>
-            <div class="contact_bottom">
+            <div id="contact_right">
                 <a href="mailto:jennifer0tang@gmail.com"><i class="fa fa-envelope"></i></a>
                 <a href="https://github.com/jenntang1"><i class="fa fa-github"></i></a>
                 <a href="https://linkedin.com/in/jennifer-tang-nyc"><i class="fa fa-linkedin"></i></a>
@@ -86,28 +87,12 @@
             </div> 
         </div>
 
-<!-- Set "copyright" information at bottom of webpage -->
+<!-- Set "copyright" information at bottom -->
         <footer>
-            <div class="footer">
-                <p>Created by Jennifer Tang at  <a href="https://github.com/jenntang1/jenntang1.github.io"><i class="fa fa-github"></i></a></p>
+            <div>
+                <p>Created by Jennifer Tang at <a href="https://github.com/jenntang1/jenntang1.github.io"><i class="fa fa-github"></i></a></p>
             </div>
         </footer>
-
-<!-- Set sticky header/navigation bar wiht jQuery-->
-        <script>
-            window.onscroll = function() {myFunction()};
-
-            var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetTop;
-
-            function myFunction() {
-                if (window.pageYOffset >= sticky) {
-                    navbar.classList.add("sticky")
-                } else {
-                navbar.classList.remove("sticky");
-                }
-            }
-        </script>
 
     </body>
 

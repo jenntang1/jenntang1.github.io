@@ -1,4 +1,7 @@
-/* The styles are ordered from top of the webpage to the bottom */
+/****************************************************************
+ * The styles are ordered from top of the webpage to the bottom *
+ ****************************************************************/
+
 
 /* Font type support */
 @font-face {
@@ -6,221 +9,217 @@
     src: url('https://github.com/jenntang1/jenntang1.github.io/blob/master/fonts/Avenir-Book.ttf') format('truetype');
   }
 
-/* Default Style */
-body {
-    height: 125vh;
-    font-family: 'Avenir';
-    color: #336699;
-    margin-top: 80px;
-    padding: 50px;
+
+/* Clicking on header image brings user to the top */
+html {
+    scroll-behavior: smooth;
 }
 
-/* Style for navigation bar */
+
+/* Style for headers */
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #336699;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+/* Style for body and default font style) */
+body {
+    /* margin-top: 80px;
+    padding: 50px;
+    height: 125vh; */
+    font-family: 'Avenir';
+    color: #262626;
+}
+
+
+/* Style for header/navigation bar */
 header {
-    background-color: #FFFFFF;
     position: fixed;
+    height: 150px;
     top: 0;
     left: 0;
     right: 0;
-    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #FFFFFF;
     box-shadow: 0 0 25px 0 #262626;
 }
 
-#navbar {
-    overflow: hidden;
-    background-color: #DEDEDE;
-}
-
-#navbar a {
-    float: center;
-    display: block;
-    color: #336699;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-#navbar a:hover {
-    color: #336699;
-}
-
-#navbar a.home {
-    color: #336699;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding-top: 60px;
-}
-
-/* Style for header image */
-.name_header {
-    -webkit-tap-highlight-color: transparent;
-    width: 150px;
-    height: 50px;
-    border: 3px solid #333;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Style for header name */
+#header_svg {
     position: relative;
-    z-index: 0;
-    transition: 1s;
+    margin: 0 auto;
+    width: 164px; 
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-/*
-.name {
-    width: 150px;
-    height: 50px;
-    border: 3px solid #333;
-    font-family: 'Avenir Book';
-    font-size: 20px;
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 0;
-    transition: 1s;
+#header_shape {
+    stroke-dasharray: 0 540;
+    stroke-dashoffset: -474;
+    stroke-width: 1px;
+    stroke: #336699;
+    border-radius: 100%;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
 }
-  
-.name::before, .name::after {
+
+#header_svg:hover #header_shape {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+    border-radius: 100%;
+}
+
+#header_text {
     position: absolute;
-    background: #DEDEDE;
-    z-index: -1;
-    transition: 1s;
-    content: '';
+    width: 164px;
+    height: 164px;
+    top: 0;
+    left: 0;
+    line-height: 164px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'Avenir';
+    font-size: 20px;
+    color: #262626;
 }
-  
-.name::before {
-    height: 50px;
-    width: 130px;
+
+#header_text a {
+    text-decoration: none;
+    font-weight: normal;
+    color: #262626;
 }
-  
-.name::after {
-    width: 150px;
-    height: 30px;
-}
-  
-.name:hover::before {
-    width: 0px;
-    background: #DEDEDE;
-}
-  
-.name:hover::after {
-    height: 0px;
-    background: #DEDEDE;
-}
-  
-.name:hover {
-    background: #DEDEDE;
-} */
+
 
 /* Style for About */
-.about {
-    width: 80%;
-	margin: 0 auto;
-    padding: 20px;
+#about {
+    margin: 0 auto;
+    padding-top: 300px;
+    width: 600px;
+    height: 500px;
 }
-
-.about_left {
-    width: 30px;
  
-    float: left;
-}
-
-.profile_image {
-    width: 150px;
-
-    float: left;
-}
-
-.about_right {
-    float: right;
-    width: 500px;
-    height: 200px;
-}
-
-/* Style for About */
-.contact {
-    float: center;
-    width: 800px;
-    height: 600px;
-}
-
-.contact_top {
-    float: left;
+#profile_image {
     width: 200px;
     height: 200px;
+
 }
 
-.contact_bottom {
-    float: left;
+#about_left {
     width: 200px;
     height: 200px;
+    float: left;
+}
+
+#about_right {
+    padding-top: 20px;
+    padding-left: 30px; 
+    width: 300px; 
+    height: 200px;
+    float: left;
 }
 
 .clear {
     clear: both;
 }
 
+/* Style for Portfolio */
+.portfolio a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #262626;
+}
+
+
+/* Style for Resume */
+#resume {
+    margin: 0 auto;
+    width: 500px;
+    height: 200px;
+    float: center;
+}
+
+#resume_pdf {
+    text-decoration: none;
+    font-weight: bold;
+    color: #262626;
+}
+
+
+/* Style for Contact */
+#contact {
+    margin: 0 auto;
+    width: 500px;
+    height: 300px;
+}
+
+#contact_left {
+    width: 330px;
+    height: 100px;
+    float: left;
+}
+
+#contact_right {
+    width: 400px;
+    height: 100px;
+    float: left;
+}
+
+
 /* Style for socal media links */
-.contact_bottom a {
+#contact_right a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 6px;
     position: relative;
-    list-style-image: none;
+    box-sizing: border-box;
     width: 40px;
     height: 40px;
-    display: block;
+    list-style-image: none;
     text-align: center;
-    margin: 0 10px;
     border-radius: 30%;
-    padding: 6px;
-    box-sizing: border-box;
-    text-decoration: none;
     box-shadow: 0 10px 15px rgba(0,0,0,0.3);
-    background: linear-gradient(0deg, #DDD, #FFF);
     transition: .5s;
 }
   
-.contact_bottom a:hover {
+#contact_right a:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
   
-.contact_bottom a .fa {
+#contact_right a .fa {
+    display: inline-block;
+    line-height: calc(40px - 12px);
     width: 100%;
     height: 100%;
-    display: block;
-    background: linear-gradient(0deg, #FFF, #DDD);
     border-radius: 30%;
-    line-height: calc(60px - 12px);
+    background-color: #FFFFFF;
     font-size: 24px;
     color: #262626;
     transition: .5s;
 }
   
-.contact_bottom a:hover .fa {
+#contact_right a:hover .fa {
     color: #336699;
 }
 
-/* Style for footer */
+
+/* Style for footer/"copyright" information */
 footer {
-	height: 10%;
-	background-color: #FFFFFF;
-	display: flex;
+    display: flex;
+    height: 10%;
 	justify-self: center;
 	justify-content: center;
 	align-content: center;
     overflow: visible;
-    font-size: 12px;
-}
-
-footer a {
+    background-color: #FFFFFF;
+    font-size: 14px;
     color: #262626;
 }
