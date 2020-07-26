@@ -16,6 +16,12 @@ html {
 }
 
 
+/* Clear floats */
+.clear {
+    clear: both;
+}
+
+
 /* Style for headers */
 h1 {
     font-size: 30px;
@@ -52,6 +58,7 @@ header {
     background-color: #FFFFFF;
     box-shadow: 0 0 25px 0 #262626;
 }
+
 
 /* Style for header name */
 #header_svg {
@@ -99,59 +106,84 @@ header {
 }
 
 
-/* Style for Contact */
+/* Style for Intro */
 #hello {
     margin: 0 auto;
-    padding-top: 300px;
-    width: 500px;
-    height: 300px;
+    padding-top: 330px;
+    width: 425px;
+    height: 360px;
+}
+
+#hello h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #336699;
+}
+
+#hello h2 {
+    text-align: center;
+    color: #336699;
 }
 
 
 /* Style for About */
 #about {
-    margin: 0 auto;
+    display: flex;
+    padding-left: 180px;
     width: 600px;
-    height: 500px;
+    height: 80px;
 }
  
 #profile_image {
     width: 200px;
     height: 200px;
-
 }
 
 #about_left {
+    flex: none;
+    box-sizing: border-box;
+    padding-left: 180px;
     width: 200px;
-    height: 200px;
+    height: 450px;
     float: left;
 }
 
 #about_right {
+    flex: none;
     padding-top: 20px;
-    padding-left: 30px; 
-    width: 300px; 
-    height: 200px;
+    padding-left: 200px;
+    width: 400px; 
+    height: 450px;
     float: left;
 }
 
-.clear {
-    clear: both;
-}
 
 /* Style for Portfolio */
-.portfolio a {
+#portfolio {
+    margin: 0 auto;
+    width: 600px;
+    height: 2000px;
+    float: center;
+}
+
+#portfolio a {
     text-decoration: none;
     font-weight: bold;
     color: #262626;
+}
+
+#portfolio img {
+    border-radius: 3%;
+    width: 100%;
+    height: 100%;
 }
 
 
 /* Style for Resume */
 #resume {
     margin: 0 auto;
-    width: 500px;
-    height: 200px;
+    width: 600px;
+    height: 550px;
     float: center;
 }
 
@@ -165,18 +197,18 @@ header {
 /* Style for Contact */
 #contact {
     margin: 0 auto;
-    width: 500px;
-    height: 300px;
+    width: 600px;
+    height: 450px;
 }
 
 #contact_left {
-    width: 330px;
+    width: 300px;
     height: 100px;
     float: left;
 }
 
 #contact_right {
-    width: 400px;
+    width: 300px;
     height: 100px;
     float: left;
 }
@@ -230,4 +262,8 @@ footer {
     background-color: #FFFFFF;
     font-size: 14px;
     color: #262626;
+}
+
+footer a .fa {
+    color: #262626
 }
