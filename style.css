@@ -1,5 +1,5 @@
 /****************************************************************
- * The styles are ordered from top of the webpage to the bottom *
+ *** The styles are ordered from top to bottom of the webpage ***
  ****************************************************************/
 
 
@@ -133,11 +133,7 @@ header {
     width: 600px;
     height: 80px;
 }
- 
-#profile_image {
-    width: 200px;
-    height: 200px;
-}
+
 
 #about_left {
     flex: none;
@@ -146,6 +142,11 @@ header {
     width: 200px;
     height: 450px;
     float: left;
+}
+ 
+#profile_image {
+    width: 200px;
+    height: 200px;
 }
 
 #about_right {
@@ -163,7 +164,6 @@ header {
     margin: 0 auto;
     width: 600px;
     height: 2000px;
-    float: center;
 }
 
 #portfolio a {
@@ -184,7 +184,6 @@ header {
     margin: 0 auto;
     width: 600px;
     height: 550px;
-    float: center;
 }
 
 #resume_pdf {
